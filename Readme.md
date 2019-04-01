@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Георгий Афонин](https://up.htmlacademy.ru/adaptive/16/user/154876).
-* Наставник: `Неизвестно`.
+* Наставник: Александр Горбачев.
 
 ---
 
