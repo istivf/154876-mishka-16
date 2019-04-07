@@ -1,0 +1,17 @@
+.main-navigation__toggle {
+  width: 20px;
+  height: 14px;
+  @include button;
+  background-image: url(../../img/icon-menu-open.svg);
+}
+
+.main-navigation__list {
+  list-style: none;
+  @include noindent;
+}
+
+.main-navigation__link {
+  font-family: $openSansBold;
+  font-size: 17px;
+  @include link;
+}

@@ -1,0 +1,70 @@
+.main-product {
+  padding-top: 34px;
+}
+
+.main-product__title {
+  @include noindent;
+  margin-bottom: 8px;
+  font-family: $openSansBold;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.main-product__mark {
+  margin-bottom: 30px;
+  font-family: $openSansBold;
+  font-size: 17px;
+  line-height: 1.18;
+  color: #63d1bb;
+}
+
+.main-product__info {
+  margin-bottom: 35px;
+  font-family: $openSans;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.main-product__params {
+  margin-bottom: 28px;
+  font-family: $openSans;
+  font-size: 15px;
+  line-height: 1.33;
+  color: #444444;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.main-product__td {
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-product-img {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 29px;
+}
+
+.main-product__price {
+  margin-bottom: 28px;
+  font-family: $openSansBold;
+  font-size: 17px;
+  line-height: 1.41;
+  color: #444444;
+  text-align: center;
+}
+
+.main-product__button {
+  @include button;
+  min-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: $openSansBold;
+  font-size: 17px;
+  line-height: 1.18;
+  color: #444444;
+  border: solid 2px #444444;
+}
