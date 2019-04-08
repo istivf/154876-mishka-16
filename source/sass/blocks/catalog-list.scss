@@ -21,8 +21,8 @@
 }
 
 .catalog-list__info {
-  position: relative;
   @include noindent;
+  position: relative;
   padding-bottom: 27px;
   font-family: $openSans;
   font-size: 13px;

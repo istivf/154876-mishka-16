@@ -1,5 +1,5 @@
-$openSans: "Open Sans", Arial, sans-serif;
-$openSansBold: "Open Sans Bold", Arial, sans-serif;
+$openSans: "Open Sans", arial, sans-serif;
+$openSansBold: "Open Sans Bold", arial, sans-serif;
 
 @mixin button {
   border: none;
@@ -37,17 +37,17 @@ $openSansBold: "Open Sans Bold", Arial, sans-serif;
 
 
 @font-face {
-    font-family: "Open Sans";
-    src: url("../fonts/opensans.woff") format("woff"),
-         url("../fonts/opensans.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Open Sans Bold";
-    src: url("../fonts/opensansbold.woff") format("woff"),
-         url("../fonts/opensansbold.woff2") format("woff2");
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
 }
