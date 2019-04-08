@@ -1,0 +1,25 @@
+.about-us {
+  padding-top: 35px;
+}
+
+.about-us__title {
+  @include noindent;
+  font-family: $openSansBold;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.about-us__list {
+  @include list;
+}
+
+.about-us__img {
+  fill: #63d1bb;
+}
+
+.about-us__info {
+  font-family: $openSansBold;
+  font-size: 17px;
+  line-height: 1.18;
+}

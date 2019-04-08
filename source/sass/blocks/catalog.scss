@@ -1,0 +1,7 @@
+.catalog {
+  padding-top: 30px;
+}
+
+.catalog__catalog-list {
+  @include list;
+}
