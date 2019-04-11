@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.categories__item {
+  width: 100%;
+}
+
 .categories__item--interior {
   background-color: #63d1bb;
 }
@@ -42,4 +46,10 @@
   fill: #35a999;
   top: 10px;
   right: 30px;
+}
+
+@media (min-width: 768px) {
+  .categories__list {
+    display: flex;
+  }
 }

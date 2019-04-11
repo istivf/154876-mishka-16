@@ -1,3 +1,6 @@
 .social-list {
   @include list;
+  display: flex;
+  justify-content: space-between;
+  width: 143px;
 }

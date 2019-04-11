@@ -1,0 +1,9 @@
+.interface-elements__list {
+  @include list;
+}
+
+.interface-elements__link {
+  @include link;
+  font-family: $openSansBold;
+  font-size: 17px;
+}
