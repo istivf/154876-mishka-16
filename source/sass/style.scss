@@ -1,5 +1,27 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
 $openSans: "Open Sans", arial, sans-serif;
 $openSansBold: "Open Sans Bold", arial, sans-serif;
+
+body {
+  min-width: 320px;
+
+  font-family: $openSans;
+}
 
 @mixin button {
   border: none;
@@ -26,7 +48,7 @@ $openSansBold: "Open Sans Bold", arial, sans-serif;
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-navigation.scss";
-@import "blocks/promo-screen.scss";
+@import "blocks/interface-elements.scss";
 @import "blocks/categories.scss";
 @import "blocks/main-product.scss";
 @import "blocks/about-us.scss";
@@ -34,20 +56,3 @@ $openSansBold: "Open Sans Bold", arial, sans-serif;
 @import "blocks/social-list.scss";
 @import "blocks/catalog.scss";
 @import "blocks/catalog-list.scss";
-
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensansbold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}

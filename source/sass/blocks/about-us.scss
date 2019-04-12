@@ -10,7 +10,11 @@
   margin-bottom: 30px;
 }
 
-.about-us__list {
+.about-us__list-left {
+  @include list;
+}
+
+.about-us__list-right {
   @include list;
 }
 
@@ -22,4 +26,27 @@
   font-family: $openSansBold;
   font-size: 17px;
   line-height: 1.18;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    padding-top: 35px;
+    padding-bottom: 80px;
+  }
+
+  .about-us__lists-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-us__item {
+    width: 280px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }
