@@ -1,27 +1,7 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensansbold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
 $openSans: "Open Sans", arial, sans-serif;
 $openSansBold: "Open Sans Bold", arial, sans-serif;
-
-body {
-  min-width: 320px;
-
-  font-family: $openSans;
-}
+$tablet-width: 768px;
+$desktop-width: 1150px;
 
 @mixin button {
   border: none;
@@ -44,11 +24,13 @@ body {
   padding: 0;
 }
 
+@import "blocks/scaffolding.scss";
 @import "blocks/container.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
-@import "blocks/main-navigation.scss";
-@import "blocks/interface-elements.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/info-nav.scss";
+@import "blocks/special-nav.scss";
 @import "blocks/categories.scss";
 @import "blocks/main-product.scss";
 @import "blocks/about-us.scss";

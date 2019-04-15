@@ -1,7 +1,23 @@
 .catalog {
-  padding-top: 30px;
+  width: 322px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .catalog__catalog-list {
   @include list;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 668px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1050px;
+  }
 }
