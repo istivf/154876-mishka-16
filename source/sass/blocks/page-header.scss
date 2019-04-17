@@ -33,12 +33,6 @@
   left: 0;
 }
 
-
-.page-header__logo {
-  width: 86px;
-  height: 35px;
-}
-
 .page-header__logo--desktop {
   display: none;
 }
@@ -125,7 +119,7 @@
   }
 
   .page-header__bottom-section--index {
-    min-height: 745px;
+    min-height: 590px;
     padding-top: 160px;
     background-image: url("../../img/hero-tablet@1x.jpg");
     box-sizing: content-box;
