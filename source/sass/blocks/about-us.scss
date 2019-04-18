@@ -28,7 +28,7 @@
   line-height: 1.18;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .about-us {
     padding-top: 35px;
     padding-bottom: 80px;
@@ -39,14 +39,28 @@
     justify-content: space-between;
   }
 
+  .about-us__list-right .about-us__item {
+    width: 330px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
   .about-us__item {
     width: 280px;
+    margin-bottom: 50px;
+  }
+
+  .about-us__info {
+    font-size: 20px;
+    line-height: 1.1;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .about-us {
-    padding-left: 175px;
-    padding-right: 175px;
+    width: 700px;
   }
 }
