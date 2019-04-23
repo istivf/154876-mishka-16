@@ -12,6 +12,10 @@
   list-style: none;
 }
 
+.main-nav__item {
+  z-index: 1;
+}
+
 .main-nav__link {
   @include link;
   font-family: $openSansBold;

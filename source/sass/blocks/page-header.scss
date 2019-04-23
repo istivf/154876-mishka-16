@@ -43,6 +43,7 @@
 
 .page-header__bottom-section {
   display: flex;
+  position: relative;
   flex-direction: column;
   min-height: 177px;
   justify-content: center;
@@ -147,7 +148,7 @@
   .page-header__free-delivery {
     display: block;
     position: absolute;
-    top: 93px;
+    top: 25px;
     right: 50px;
     font-size: 15px;
     line-height: 1.6;
@@ -192,16 +193,6 @@
   .page-header__title {
     width: 610px;
     align-self: center;
-  }
-
-  .page-header__free-delivery {
-    display: block;
-    position: absolute;
-    top: 93px;
-    right: 50px;
-    font-size: 15px;
-    line-height: 1.6;
-    color: #444444;
   }
 
   .page-header__promo-screen--index {
