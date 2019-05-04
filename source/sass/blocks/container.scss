@@ -1,12 +1,13 @@
 .container {
-  width: 260px;
+  width: 320px;
   padding: 0 30px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 668px;
+    width: 768px;
     padding: 0 50px;
   }
 }
@@ -14,6 +15,5 @@
 @media (min-width: $desktop-width) {
   .container {
     width: 1050px;
-    padding: 0 50px;
   }
 }

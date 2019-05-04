@@ -1,6 +1,7 @@
 .main-product {
   padding-top: 34px;
   position: relative;
+  padding-bottom: 162px;
 }
 
 .main-product__title {
@@ -47,7 +48,11 @@
 .main-product__img {
   width: 260px;
   height: 315px;
-  margin-bottom: 29px;
+}
+
+.main-product__price-section {
+  position: absolute;
+  bottom: 0;
 }
 
 .main-product__price {
@@ -61,7 +66,7 @@
 
 .main-product__button {
   @include button;
-  min-width: 100%;
+  width: 260px;
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: $openSansBold;
@@ -72,18 +77,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-product__wrapper {
+  .main-product {
     display: flex;
-    flex-direction: column;
-    width: 668px;
-    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 100px;
     padding-bottom: 70px;
   }
 
-  .main-product__title-section {
+  .main-product__description {
     display: flex;
-    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  .main-product__title-section {
+    position: absolute;
+    top: 0;
+    display: flex;
     justify-content: space-between;
+    width: 695px;
   }
 
   .main-product__title {
@@ -91,13 +102,9 @@
     line-height: 1.16;
   }
 
-  .main-product__mid-section {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .main-product__info-section {
-    width: 290px;
+    width: 292px;
+    padding-bottom: 11px;
   }
 
   .main-product__info {
@@ -116,8 +123,11 @@
   }
 
   .main-product__price-section {
-    width: 250px;
-    margin-top: -163px;
+    position: relative;
+  }
+
+  .main-product__button {
+    width: 292px;
   }
 
   .main-product::after {
@@ -132,43 +142,42 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-product__wrapper {
-    width: 1050px;
+  .main-product {
+    padding-top: 54px;
   }
 
-  .main-product__title-section {
-    position: absolute;
-    flex-grow: 0;
-    flex-direction: row-reverse;
-    width: 700px;
-    top: 110px;
-  }
-
-  .main-product__title {
-    font-size: 53px;
-    line-height: 1.08;
+  .main-product__description {
+    align-self: flex-end;
+    margin-bottom: 5px;
   }
 
   .main-product__mid-section {
-    justify-content: flex-end;
+    position: relative;
+    left: 90px;
+  }
+
+  .main-product__title-section {
+    top: 100px;
+    left: 60px;
+    flex-direction: row-reverse;
+    width: 620px;
+  }
+
+  .main-product__title {
+    font-size: 50px;
+    line-height: 1.08;
   }
 
   .main-product__info-section {
-    align-self: center;
-    margin-right: 60px;
+    margin-bottom: 100px;
+  }
+
+  .main-product__info {
+    margin-bottom: 66px;
   }
 
   .main-product__img {
     width: 525px;
     height: 637px;
-    margin-top: 20px;
-    margin-bottom: 29px;
-    background-image: url("../img/triple-set-desktop@1x.jpg");
-  }
-
-  .main-product__price-section {
-    align-self: center;
-    width: 290px;
-    margin-left: -410px;
   }
 }
