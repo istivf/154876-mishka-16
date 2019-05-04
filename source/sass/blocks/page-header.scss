@@ -1,6 +1,5 @@
 .page-header {
   position: relative;
-  background-color: #f1f1f1;
 }
 
 .page-header--index {
@@ -31,10 +30,6 @@
   background-color: #ececec;
   top: 80px;
   left: 0;
-}
-
-.page-header__logo--desktop {
-  display: none;
 }
 
 .special-nav {
@@ -84,18 +79,6 @@
   display: none;
 }
 
-@media (max-width: $tablet-width) {
-  .page-header__top-menu {
-    width: 100%;
-    padding: 0;
-  }
-
-  .page-header__bottom-section {
-    width: 100%;
-    padding: 0;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .page-header__top-menu-wrapper {
     border-bottom: 1px solid #ececec;
@@ -104,6 +87,10 @@
   .page-header__top-menu {
     flex-direction: row;
     justify-content: space-between;
+    width: 768px;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .page-header__logo {
@@ -117,21 +104,23 @@
     display: none;
   }
 
-  .main-navigation__toggle {
+  .main-nav__toggle {
     display: none;
   }
 
   .page-header__bottom-section {
     min-height: 235px;
+    width: 768px;
     padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .page-header__bottom-section--index {
-    min-height: 450px;
+    min-height: 540px;
     padding-top: 90px;
     margin-top: 0;
     background-image: url("../img/hero-tablet@1x.jpg");
-    box-sizing: content-box;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -143,6 +132,8 @@
     font-size: 43px;
     line-height: 1.16;
     padding: 0;
+    width: 500px;
+    align-self: center;
   }
 
   .page-header__free-delivery {
@@ -166,6 +157,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__top-menu {
+    width: 1150px;
+  }
+
   .page-header__logo {
     order: 2;
   }
@@ -178,9 +173,12 @@
     order: 3;
   }
 
+  .page-header__bottom-section {
+    width: 1150px;
+  }
+
   .page-header__bottom-section--index {
-    width: 1050px;
-    min-height: 585px;
+    min-height: 745px;
     padding-top: 160px;
     background-image: url("../img/hero-desktop@1x.jpg");
 
@@ -193,9 +191,5 @@
   .page-header__title {
     width: 610px;
     align-self: center;
-  }
-
-  .page-header__promo-screen--index {
-    height: 730px;
   }
 }
