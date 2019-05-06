@@ -27,6 +27,20 @@ $retina-dppx: 1.5dppx;
   padding: 0;
 }
 
+@mixin style-button {
+  width: 260px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-family: $openSansBold;
+  border: solid 2px #444444;
+  color: #444444;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
 @import "blocks/scaffolding.scss";
 @import "blocks/container.scss";
 @import "blocks/visually-hidden.scss";
@@ -40,3 +54,5 @@ $retina-dppx: 1.5dppx;
 @import "blocks/social-list.scss";
 @import "blocks/catalog.scss";
 @import "blocks/catalog-list.scss";
+@import "blocks/recalls.scss";
+@import "blocks/contacts.scss";

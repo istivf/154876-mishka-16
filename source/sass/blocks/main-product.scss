@@ -66,14 +66,8 @@
 
 .main-product__button {
   @include button;
-  width: 260px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: $openSansBold;
-  font-size: 17px;
+  @include style-button;
   line-height: 1.18;
-  color: #444444;
-  border: solid 2px #444444;
 }
 
 @media (min-width: $tablet-width) {
