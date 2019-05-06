@@ -1,0 +1,143 @@
+.contacts {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-bottom: 52px;
+  margin-top: 44px;
+  margin-bottom: 39px;
+}
+
+.contacts__info {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.contacts__titile {
+  @include noindent;
+  margin-bottom: 42px;
+  font-family: $openSansBold;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.contacts__table {
+  border-collapse: collapse;
+  font-family: $openSans;
+  font-size: 15px;
+  line-height: 2;
+  color: #444444;
+}
+
+.contacts__td {
+  padding-bottom: 42px;
+  vertical-align: top;
+}
+
+.contacts__table .contacts__td:first-child {
+  width: 75px;
+}
+
+.contacts-email {
+  border-bottom: 1px solid #62d1ba;
+  padding-bottom: 5px;
+}
+
+.contacts__map {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.contacts__button-wrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contacts__button {
+  @include link;
+  @include style-button;
+  line-height: 1.11;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__info {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .contacts__titile {
+    position: relative;
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .contacts__titile::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 81px;
+    background-image: url("../img/icon-flag.svg");
+  }
+
+  .contacts__button-wrapper {
+    width: 668px;
+  }
+
+  .contacts__table tbody {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__td {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 70px;
+    margin-bottom: 45px;
+  }
+
+  .contacts__info {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    align-self: flex-end;
+  }
+
+  .contacts__titile::after {
+    top: 0;
+    left: -100px;
+  }
+
+  .contacts__table {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__table tbody {
+    display: table;
+  }
+
+  .contacts__td {
+    width: auto;
+  }
+
+  .contacts__button-wrapper {
+    position: relative;
+    margin-bottom: 45px;
+    width: auto;
+  }
+}
