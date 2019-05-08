@@ -39,6 +39,7 @@ $retina-dppx: 1.5dppx;
   color: #444444;
   background-color: #ffffff;
   font-size: 18px;
+  text-decoration: none;
 }
 
 @import "blocks/scaffolding.scss";
@@ -56,3 +57,5 @@ $retina-dppx: 1.5dppx;
 @import "blocks/catalog-list.scss";
 @import "blocks/recalls.scss";
 @import "blocks/contacts.scss";
+@import "blocks/making-of.scss";
+@import "blocks/form.scss";
