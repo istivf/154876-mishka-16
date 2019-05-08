@@ -60,6 +60,108 @@
       </div>
     </header>
 
+    <main>
+      <section class="form">
+        <h2 class="visually-hidden">Форма заказа</h2>
+        <p class="form__text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form action="#"  method="get">
+          <fieldset class="form__type">
+            <div class="form__wrapper container">
+              <span class="form__form-name">Тип</span>
+              <ul class="form__type-list">
+                <li>
+                  <input class="visually-hidden form__type-input" type="radio" name="type" id="interior" checked>
+                  <label for="interior">Аксессуар для интерьера</label>
+                </li>
+                <li>
+                  <input class="visually-hidden form__type-input" type="radio" id="toy" name="type">
+                  <label for="toy">Детская игрушка</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__color">
+            <div class="form__wrapper container">
+              <span class="form__form-name">Цвет</span>
+              <ul class="form__color-list">
+                <li class="form__color-item">
+                  <input class="visually-hidden form__color-input" type="checkbox" id="white" checked>
+                  <label for="white">Белый</label>
+                </li>
+                <li class="form__color-item">
+                  <input class="visually-hidden form__color-input" type="checkbox" id="gray" checked>
+                  <label for="gray">Серый</label>
+                </li>
+                <li class="form__color-item">
+                  <input class="visually-hidden form__color-input" id="tiffany" type="checkbox">
+                  <label for="tiffany">«Тиффани»</label>
+                </li>
+                <li class="form__color-item">
+                  <input class="visually-hidden form__color-input" id="black" type="checkbox">
+                  <label for="black">Черный</label>
+                </li>
+                <li class="form__color-item">
+                  <input class="visually-hidden form__color-input" id="pink" type="checkbox">
+                  <label for="pink">Розовый</label>
+                </li>
+                <li class="form__color-item">
+                  <input class="visually-hidden form__color-input" id="orange" type="checkbox">
+                  <label for="orange">Оранжевый</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__full-name">
+            <div class="form__wrapper container">
+              <span class="form__form-name">ФИО</span>
+              <ul class="form__name-list">
+                <li class="form__name-item">
+                  <label for="first-name">Имя:</label>
+                  <input type="text" placeholder="Введите ваше имя*" id="first-name">
+                </li>
+                <li class="form__name-item">
+                  <label for="second-name">Фамилия:</label>
+                  <input type="text" placeholder="Укажите фамилию*" id="second-name">
+                </li>
+                <li class="form__name-item">
+                  <label for="patronymic">Отчество:</label>
+                  <input type="text" placeholder="Отчество, если желаете" id="patronymic">
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__number">
+            <div class="form__wrapper container">
+              <span class="form__form-name">Тел</span>
+              <input type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <svg class="form__number-icon" width="24.829" height="24.333" fill="#cccccc">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </div>
+          </fieldset>
+          <fieldset class="form__email">
+            <div class="form__wrapper container">
+              <span class="form__form-name">E-mail</span>
+              <input type="text" placeholder="Ваш Email*">
+              <svg class="form__email-icon" width="32" height="32" fill="#cccccc">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </div>
+          </fieldset>
+          <fieldset class="form__extra">
+            <div class="form__wrapper container">
+              <span class="form__form-name">Доп</span>
+              <textarea name="name" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </fieldset>
+          <div class="form__form-bottom container">
+            <span class="form__required">*Поля обязательны для заполнения</span>
+            <button class="form__button" type="submit">Оптправить заказ</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
     <footer class="page-footer__wrapper">
       <div class="page-footer container">
         <a class="page-footer__logo" href="index.html"><svg alt="Логотип интернет магазина Mishka" width="101.615px" height="34.056px">
