@@ -1,47 +1,5 @@
-$openSans: "Open Sans", arial, sans-serif;
-$openSansBold: "Open Sans Bold", arial, sans-serif;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-$mobile-width-only: 767px;
-$retina-dpi: 144dpi;
-$retina-dppx: 1.5dppx;
-
-@mixin button {
-  border: none;
-  background: none;
-}
-
-@mixin link {
-  text-decoration: none;
-  color: #000000;
-}
-
-@mixin list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-@mixin noindent {
-  margin: 0;
-  padding: 0;
-}
-
-@mixin style-button {
-  width: 260px;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  font-family: $openSansBold;
-  border: solid 2px #444444;
-  color: #444444;
-  background-color: #ffffff;
-  font-size: 18px;
-  text-decoration: none;
-}
-
+@import "blocks/mixin.scss";
+@import "blocks/variables.scss";
 @import "blocks/scaffolding.scss";
 @import "blocks/container.scss";
 @import "blocks/visually-hidden.scss";
@@ -59,3 +17,4 @@ $retina-dppx: 1.5dppx;
 @import "blocks/contacts.scss";
 @import "blocks/making-of.scss";
 @import "blocks/form.scss";
+@import "blocks/modal.scss";

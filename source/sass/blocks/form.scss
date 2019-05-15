@@ -1,9 +1,13 @@
+.form {
+  padding-top: 21px;
+}
+
 .form__text {
   font-family: $openSans;
   font-size: 13px;
   line-height: 1.85;
   color: #444444;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .form fieldset {
@@ -24,7 +28,17 @@
   background-color: #63d1bb;
 }
 
-.form__form-name {
+.form__wrapper--email::after {
+  content: "";
+  position: absolute;
+  width: 179px;
+  height: 1px;
+  right: 30px;
+  top: 8px;
+  background-color: #63d1bb;
+}
+
+.form__name {
   display: block;
   position: relative;
   font-family: $openSansBold;
@@ -32,7 +46,17 @@
   line-height: 0.94;
   color: #63d1bb;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
+  min-width: 80px;
+  margin-right: 86px;
+}
+
+.form__name--number {
+  margin-bottom: 17px;
+}
+
+.form__name--email {
+  margin-bottom: 10px;
 }
 
 .form label {
@@ -41,47 +65,48 @@
   line-height: 1;
 }
 
-.form textarea {
+.form__textarea {
   width: 100%;
   height: 142px;
   border: 2px solid #000000;
-  margin-bottom: 18px;
-  padding: 18px 17px;
+  margin-bottom: 11px;
+  padding: 15px;
   box-sizing: border-box;
   font-family: $openSans;
   font-size: 17px;
   line-height: 1;
-  color: rgba(68, 68, 68, 0.3);
+  color: #c7c7c7;
 }
 
 .form__type-list {
   @include list;
 }
 
-.form__type-list label {
+.form__type-lable {
   position: relative;
   display: block;
   padding-left: 62px;
-  padding-top: 11px;
+  padding-top: 10px;
   padding-bottom: 12px;
+  margin-bottom: 4px;
 }
 
-.form__type-list label::before {
+.form__type-lable::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: solid 2px #444444;
   border-radius: 50%;
 }
 
-.form__type-input:checked + label::after {
+.form__type-input:checked + .form__type-lable::after {
   content: "";
   position: absolute;
-  left: 14px;
-  top: 14px;
+  left: 12px;
+  top: 12px;
   width: 16px;
   height: 16px;
   background-color: #62d1ba;
@@ -92,26 +117,26 @@
   @include list;
 }
 
-.form__color-list label {
+.form__color-lable {
   position: relative;
   display: block;
-  padding-left: 64px;
+  padding-left: 63px;
   padding-top: 12px;
   padding-bottom: 13px;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
-.form__color-list label::before {
+.form__color-lable::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  width: 40px;
-  height: 39px;
+  width: 36px;
+  height: 35px;
   border: solid 2px #444444;
 }
 
-.form__color-input:checked + label::after {
+.form__color-input:checked + .form__color-lable::after {
   content: "";
   position: absolute;
   left: 6px;
@@ -128,39 +153,39 @@
 
 .form__type {
   @include noindent;
-  margin-bottom: 45px;
+  margin-bottom: 28px;
 }
 
 .form__color {
   @include noindent;
-  margin-bottom: 43px;
+  margin-bottom: 10px;
 }
 
 .form__full-name {
   @include noindent;
-  margin-bottom: 34px;
+  margin-bottom: 11px;
 }
 
 .form__number {
   @include noindent;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 }
 
 .form__number-icon {
   position: absolute;
-  top: 38px;
-  right: 33px;
+  top: 34px;
+  right: 38px;
 }
 
 .form__email {
   @include noindent;
-  margin-bottom: 27px;
+  margin-bottom: 12px;
 }
 
 .form__email-icon {
   position: absolute;
-  top: 56px;
+  top: 34px;
   right: 33px;
 }
 
@@ -178,37 +203,107 @@
 }
 
 .form__form-bottom {
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 }
 
 .form__button {
   @include button;
   @include style-button;
+  font-family: $openSansBold;
+  font-size: 17px;
+  line-height: 0.94;
+  text-transform: uppercase;
+  color: #444444;
 }
 
-.form input[type="text"] {
+.form__input-name {
   width: 100%;
   border: 0;
   border-bottom: 2px solid #000000;
-  margin-bottom: 24px;
-  padding: 18px 40px 17px 0;
+  margin-bottom: 20px;
+  padding: 13px 40px 14px 0;
   box-sizing: border-box;
   font-family: $openSans;
   font-size: 17px;
   line-height: 1;
-  color: rgba(68, 68, 68, 0.3);
+  color: #444444;
+}
+
+.form__input-surname {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 20px;
+  padding: 11px 40px 14px 0;
+  box-sizing: border-box;
+  font-family: $openSans;
+  font-size: 17px;
+  line-height: 1;
+  color: #444444;
+}
+
+.form__input-patronymic {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 20px;
+  padding: 11px 40px 14px 0;
+  box-sizing: border-box;
+  font-family: $openSans;
+  font-size: 17px;
+  line-height: 1;
+  color: #444444;
+}
+
+.form__input-number {
+  @include noindent;
+  font-size: 19px;
+  font-family: $openSans;
+  line-height: 0.83;
+  color: #c7c7c7;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 15px;
+}
+
+.form__input-email {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 20px;
+  padding: 11px 40px 14px 0;
+  box-sizing: border-box;
+  font-family: $openSans;
+  font-size: 17px;
+  line-height: 1;
+  color: #444444;
+}
+
+.form__type-input:focus + .form__type-lable::before,
+.form__color-input:focus + .form__color-lable::before {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 @media (min-width: $tablet-width) {
   .form__text {
-    padding-top: 60px;
+    padding-top: 35px;
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
-  .form__type-list label {
-    margin-bottom: 25px;
+  .form__type {
+    margin-bottom: 26px;
+  }
+
+  .form__type-lable {
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 81px;
   }
 
   .form__wrapper::after {
@@ -219,24 +314,58 @@
     display: flex;
   }
 
-  .form__form-name {
-    min-width: 80px;
-    margin-right: 86px;
+  .form__name--type {
+    padding-top: 17px;
+  }
+
+  .form__name--color {
+    padding-top: 17px;
+    margin-right: 87px;
   }
 
   .form__color {
     padding-top: 50px;
-    padding-bottom: 33px;
+    padding-bottom: 26px;
     background-color: #f1f1f1;
+    margin-bottom: 0;
   }
 
   .form__color-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form__color-item {
-    width: 240px;
+    width: 239px;
+  }
+
+  .form__color-lable {
+    margin-bottom: 29px;
+    padding-left: 81px;
+    padding-top: 15px;
+  }
+
+  .form__color-lable::before {
+    width: 50px;
+    height: 48px;
+  }
+
+  .form__color-input:checked + .form__color-lable::after {
+    left: 11px;
+    top: 16px;
+    width: 33px;
+    height: 23px;
+  }
+
+  .form__full-name {
+    padding-top: 62px;
+    margin-bottom: 13px;
+  }
+
+  .form__name--full-name {
+    margin-right: 87px;
+    padding-top: 5px;
   }
 
   .form__name-item {
@@ -245,8 +374,37 @@
     width: 500px;
   }
 
+  .form__input-name {
+    font-size: 19px;
+    line-height: 0.83;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    margin-bottom: 36px;
+  }
+
+  .form__input-surname {
+    padding-left: 18px;
+    margin-bottom: 36px;
+    font-size: 19px;
+    line-height: 0.83;
+    padding-bottom: 12px;
+  }
+
+  .form__input-patronymic {
+    padding-left: 19px;
+    margin-bottom: 37px;
+    font-size: 19px;
+    line-height: 0.83;
+    padding-bottom: 12px;
+  }
+
+  .form label {
+    font-size: 19px;
+  }
+
   .form__name-item label {
     padding-right: 25px;
+    padding-top: 3px;
   }
 
   .form__name-item input[type="text"] {
@@ -256,22 +414,40 @@
   .form__number {
     background-color: #f1f1f1;
     margin-bottom: 0;
-    padding-top: 50px;
+    padding-top: 61px;
+    padding-bottom: 34px;
+  }
+
+  .form__name--number {
+    padding-top: 6px;
   }
 
   .form__number-icon {
-    top: 3px;
-    right: 75px;
+    top: 0;
+    right: 76px;
   }
 
-  .form__number input[type="text"] {
+  .form__input-number {
     background-color: #f1f1f1;
     padding-top: 0;
+    padding-bottom: 13px;
+    padding-left: 17px;
   }
 
   .form__email {
     background-color: #f1f1f1;
-    padding-bottom: 26px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+
+  .form__input-email {
+    font-size: 19px;
+    padding-left: 16px;
+  }
+
+  .form__name--email {
+    padding-top: 7px;
+    padding-left: 1px;
   }
 
   .form__email input[type="text"] {
@@ -280,12 +456,23 @@
   }
 
   .form__email-icon {
-    top: 3px;
-    right: 69px;
+    top: 1px;
+    right: 72px;
   }
 
   .form__extra {
-    margin-bottom: 45px;
+    padding-top: 50px;
+    margin-bottom: 42px;
+  }
+
+  .form__name--extra {
+    padding-top: 17px;
+    padding-left: 1px;
+  }
+
+  .form__textarea {
+    font-size: 19px;
+    line-height: 0.83;
   }
 
   .form__form-bottom {
@@ -293,9 +480,166 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
   }
 
   .form__required {
     margin-bottom: 0;
+    font-size: 17px;
+    line-height: 1.76;
+    margin-top: -5px;
+  }
+
+  .form__button {
+    width: 230px;
+    padding-left: 3px;
+    font-size: 17px;
+    line-height: 0.94;
+  }
+
+  .form__type-lable::before {
+    width: 49px;
+    height: 48px;
+  }
+
+  .form__type-input:checked + .form__type-lable::after {
+    left: 16px;
+    top: 15px;
+    width: 21px;
+    height: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-top: 74px;
+  }
+
+  .form__text {
+    width: 800px;
+    line-height: 1.8;
+  }
+
+  .form__name--type {
+    padding-left: 64px;
+    margin-right: 30px;
+  }
+
+  .form__type {
+    margin-bottom: 26px;
+  }
+
+  .form__name--color {
+    padding-left: 60px;
+    margin-right: 35px;
+  }
+
+  .form__color-list {
+    justify-content: flex-start;
+  }
+
+  .form__color-item {
+    width: 263px;
+  }
+
+  .form__name--full-name {
+    margin-right: 35px;
+    padding-left: 61px;
+  }
+
+  .form__name-item {
+    width: 699px;
+  }
+
+  .form__name--number {
+    padding-left: 62px;
+    margin-right: 33px;
+  }
+
+  .form__input-number {
+    width: 683px;
+  }
+
+  .form__number-icon {
+    top: 0;
+    right: 233px;
+  }
+
+  .form__name--email {
+    padding-top: 9px;
+    padding-left: 61px;
+    margin-right: 34px;
+  }
+
+  .form__input-email {
+    width: 700px;
+  }
+
+  .form__email-icon {
+    top: 1px;
+    right: 229px;
+  }
+
+  .form__name--extra {
+    padding-left: 63px;
+    margin-right: 32px;
+  }
+
+  .form__textarea {
+    width: 700px;
+  }
+
+  .form__extra {
+    margin-bottom: 38px;
+  }
+
+  .form__button {
+    margin-left: 175px;
+    height: 52px;
+  }
+
+  .form__required {
+    padding-top: 1px;
+    margin-right: 174px;
+  }
+
+  .form__type-item:hover .form__type-lable::before {
+    border: solid 2px #62d1ba;
+  }
+
+  .form__type-item:focus .form__type-lable::before {
+    border: solid 2px #444444;
+  }
+
+  .form__color-item:hover .form__color-lable::before {
+    border: solid 2px #62d1ba;
+  }
+
+  .form__color-item:focus .form__color-lable::before {
+    border: solid 2px #444444;
+  }
+
+  .form input[type="text"]:hover,
+  .form input[type="text"]:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  .form input[type="text"]:hover + svg,
+  .form input[type="text"]:focus + svg {
+    fill: #62d1ba;
+  }
+
+  .form__textarea:hover,
+  .form__textarea:focus {
+    border: 2px solid #62d1ba;
+  }
+
+  .form__button:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  .form__button:focus {
+    color: #7c7c7c;
   }
 }

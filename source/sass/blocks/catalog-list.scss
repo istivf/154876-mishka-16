@@ -1,15 +1,11 @@
-.catalog-list__item {
+.catalog-list__link {
+  @include link;
   margin-bottom: 30px;
   border: 1px solid #ededed;
   width: 260px;
 }
 
-.catalog-list__img {
-  width: 260px;
-  height: 195px;
-}
-
-.catalog-list__item-info-sections {
+.catalog-list__link-info-sections {
   padding-top: 28px;
   padding-right: 28px;
   padding-bottom: 28px;
@@ -70,18 +66,14 @@
   height: 19px;
 }
 
-.catalog-list__cart-icon {
-  opacity: 0.2;
-}
-
 @media (min-width: $tablet-width) {
-  .catalog-list__item {
+  .catalog-list__link {
     display: flex;
     width: auto;
     height: 334px;
   }
 
-  .catalog-list__item-info-sections {
+  .catalog-list__link-info-sections {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -104,20 +96,37 @@
     display: flex;
   }
 
-  .catalog-list__item {
+  .catalog-list__link {
     flex-direction: column;
     margin-right: 50px;
     width: 316px;
     height: auto;
   }
 
-  .catalog-list__item-info-sections {
+  .catalog-list__link:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .catalog-list__link:focus {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .catalog-list__link-info-sections {
     width: 316px;
     box-sizing: border-box;
   }
 
   .catalog-list__price-section::before {
     width: 256px;
+  }
+
+  .catalog-list__button:hover .catalog-list__cart-icon {
+    fill: #63d1bb;
+  }
+
+  .catalog-list__button:focus .catalog-list__cart-icon {
+    fill: #63d1bb;
+    opacity: 0.3;
   }
 
   .catalog-list__product-info {

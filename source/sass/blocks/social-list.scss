@@ -1,6 +1,29 @@
 .social-list {
   @include list;
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 143px;
+  left: -2px;
+  top: 4px;
+}
+
+.social-list__item--fb {
+  position: relative;
+  top: -4px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    left: -11px;
+    top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list__item--twitter {
+    position: relative;
+    top: 1px;
+    left: -2px;
+  }
 }
