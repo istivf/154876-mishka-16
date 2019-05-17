@@ -41,7 +41,7 @@
 }
 
 .contacts__td--email-title {
-  width: 75px;
+  width: 73px;
 }
 
 .contacts-email {
@@ -51,9 +51,14 @@
   padding-bottom: 5px;
 }
 
-.contacts__map {
+.contacts__map-wrapper {
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.contacts__map {
+  width: 320px;
+  height: 457px;
 }
 
 .contacts__button-wrapper {
@@ -134,6 +139,10 @@
     padding-bottom: 3px;
   }
 
+  .contacts__map {
+    width: 768px;
+  }
+
   .contacts__button {
     width: 226px;
     font-size: 17px;
@@ -184,6 +193,7 @@
 
   .contacts__td {
     width: 76px;
+    padding-bottom: 30px;
   }
 
   .contacts__td--address {
@@ -192,8 +202,12 @@
     line-height: 1.8;
   }
 
-  .contacts__map {
+  .contacts__map-wrapper {
     margin: 0;
+  }
+
+  .contacts__map {
+    width: 525px;
   }
 
   .contacts__button-wrapper {

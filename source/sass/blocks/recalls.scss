@@ -8,11 +8,13 @@
 .recalls::after {
   content: "";
   position: absolute;
-  height: 23px;
+  height: 6px;
   width: 100%;
   left: 0;
   bottom: -50px;
   background-image: url("../img/bg-zigzag-line.svg");
+  background-size: cover;
+  transform: rotate(180deg);
 }
 
 .recalls__title {
@@ -111,7 +113,8 @@
   }
 
   .recalls::after {
-    bottom: -23px;
+    height: 15px;
+    bottom: -25px;
   }
 
   .recalls__title {
@@ -145,6 +148,10 @@
     line-height: 1.33;
   }
 
+  .recalls__email {
+    font-size: 17px;
+  }
+
   .recalls__button {
     border: transparent;
     margin-bottom: 70px;
@@ -163,6 +170,13 @@
     padding-left: 225px;
     background-position: 50px top;
     margin-bottom: 0;
+  }
+
+  .recalls::after {
+    height: 21px;
+    width: 1050px;
+    left: 50px;
+    bottom: -49px;
   }
 
   .recalls__title {

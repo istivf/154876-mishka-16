@@ -78,11 +78,18 @@
 
 @media (min-width: $desktop-width) {
   .categories__list {
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    align-items: flex-end;
+    width: 1050px;
   }
 
-  .categories__list .categories__item--interior:hover {
-    height: 125px;
+  .categories__item--interior {
+    transition: 0.2s ease-out;
+  }
+
+  .categories__item--toy {
+    transition: 0.2s ease-out;
   }
 
   .categories__img--interior {
@@ -92,5 +99,15 @@
 
   .categories__img--toy {
     right: -279px;
+  }
+
+  .categories__item--interior:hover {
+    padding-top: 5px;
+    transition: 0.2s ease-out;
+  }
+
+  .categories__item--toy:hover {
+    padding-top: 5px;
+    transition: 0.2s;
   }
 }

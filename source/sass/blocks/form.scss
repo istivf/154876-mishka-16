@@ -59,6 +59,12 @@
   margin-bottom: 10px;
 }
 
+.form input {
+  width: 260px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
 .form label {
   font-family: $openSansBold;
   font-size: 17px;
@@ -139,12 +145,13 @@
 .form__color-input:checked + .form__color-lable::after {
   content: "";
   position: absolute;
-  left: 6px;
-  top: 9px;
-  width: 33px;
-  height: 23px;
+  left: 8px;
+  top: 12px;
+  width: 23px;
+  height: 16px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .form__name-list {
@@ -214,6 +221,8 @@
   line-height: 0.94;
   text-transform: uppercase;
   color: #444444;
+  width: 260px;
+  height: 52px;
 }
 
 .form__input-name {
@@ -290,7 +299,7 @@
 
 @media (min-width: $tablet-width) {
   .form__text {
-    padding-top: 35px;
+    padding-top: 42px;
     font-size: 17px;
     line-height: 1.76;
     margin-bottom: 58px;
@@ -338,6 +347,12 @@
 
   .form__color-item {
     width: 239px;
+  }
+
+  .form input {
+    width: 700px;
+    padding-right: 40px;
+    box-sizing: border-box;
   }
 
   .form__color-lable {
@@ -403,7 +418,7 @@
   }
 
   .form__name-item label {
-    padding-right: 25px;
+    padding-right: 26px;
     padding-top: 3px;
   }
 
@@ -512,7 +527,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding-top: 74px;
+    padding-top: 68px;
   }
 
   .form__text {
@@ -607,16 +622,18 @@
     border: solid 2px #62d1ba;
   }
 
-  .form__type-item:focus .form__type-lable::before {
-    border: solid 2px #444444;
+  .form__type-input:focus + .form__type-lable::before {
+    border: 2px solid  #444444;
+    opacity: 0.3;
   }
 
   .form__color-item:hover .form__color-lable::before {
     border: solid 2px #62d1ba;
   }
 
-  .form__color-item:focus .form__color-lable::before {
+  .form__color-input:focus + .form__color-lable::before {
     border: solid 2px #444444;
+    opacity: 0.3;
   }
 
   .form input[type="text"]:hover,
