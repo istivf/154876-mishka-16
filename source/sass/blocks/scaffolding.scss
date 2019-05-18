@@ -10,10 +10,28 @@
 @font-face {
   font-family: "Open Sans Bold";
   font-display: swap;
-  src: url("../../fonts/opensansbold.woff") format("woff"),
-    url("../../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
+}
+
+@keyframes open {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 body {

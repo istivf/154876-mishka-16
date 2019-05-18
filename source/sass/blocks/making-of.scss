@@ -1,25 +1,31 @@
-.making-of {
+.making-of__content-wrapper {
   position: relative;
   margin-bottom: 58px;
 }
 
 .making-of__description {
-  padding: 29px 34px 33px 34px;
+  padding: 21px 34px 31px 34px;
   border: solid 1px #ececec;
 }
 
-.makin-of__title-wrapper {
+.making-of__title-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.making-of__title-icon {
+  margin-left: -1px;
+  margin-bottom: 4px;
 }
 
 .making-of__title {
   @include noindent;
   font-family: $openSansBold;
   font-size: 17px;
-  line-height: 1.41;
+  line-height: 1.5;
   width: 126px;
+  margin-right: 9px;
 }
 
 .making-of__info {
@@ -27,78 +33,161 @@
   font-size: 13px;
   line-height: 1.85;
   color: #444444;
-  margin-bottom: 29px;
-  margin-top: 195px;
+  margin-top: 201px;
+  margin-bottom: 25px;
 }
 
 .making-of__button {
   @include style-button;
   width: auto;
+  font-size: 17px;
+  text-transform: uppercase;
 }
 
-.making-of__preview {
+.making-of__video-wrapper {
   position: absolute;
-  top: 96px;
+  top: 95px;
+}
+
+.making-of__play-button {
+  @include button;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 115px;
+  height: 89px;
 }
 
 @media (min-width: $tablet-width) {
-  .making-of {
+  .making-of__content-wrapper {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .makin-of__title-wrapper {
+  .making-of__title-wrapper {
     justify-content: flex-start;
-    margin-bottom: 41px;
+    margin-bottom: 25px;
   }
 
-  .makin-of__title-icon {
+  .making-of__title-icon {
     margin-right: 33px;
   }
 
   .making-of__title {
     width: auto;
+    font-size: 20px;
   }
 
-  .making-of__preview {
-    position: static;
+  .making-of__video-wrapper {
+    position: relative;
+    top: 0;
   }
 
   .making-of__description {
     position: relative;
     top: -5px;
+    padding-top: 32px;
     padding-left: 42px;
     padding-right: 42px;
+    padding-bottom: 45px;
   }
 
   .making-of__info {
     margin-top: 0;
+    font-size: 15px;
+    line-height: 2;
+    margin-left: -2px;
+    margin-bottom: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .making-of {
+  .making-of__content-wrapper {
     flex-direction: row-reverse;
+    margin-bottom: 105px;
+    height: 455px;
   }
 
   .making-of__description {
-    padding-top: 47px;
+    padding-top: 40px;
     padding-left: 80px;
+    padding-bottom: 52px;
     width: 368px;
     top: 0;
+    height: 361px;
   }
 
-  .makin-of__title-wrapper {
+  .making-of__title-wrapper {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 42px;
   }
 
-  .makin-of__title-icon {
-    margin-bottom: 25px;
+  .making-of__title-icon {
+    margin-bottom: 21px;
+  }
+
+  .making-of__title {
+    margin-left: -2px;
+    line-height: 1.3;
+    margin-bottom: -11px;
   }
 
   .making-of__info {
-    margin-bottom: 51px;
+    margin-bottom: 46px;
+  }
+
+  .making-of__button {
+    width: 228px;
+    height: 51px;
+    padding-right: 2px;
+    box-sizing: border-box;
+  }
+
+  .making-of__content-wrapper:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .making-of__content-wrapper:focus {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .making-of__play-button:hover .making-of__play-icon {
+    @include button;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 121px;
+    height: 92px;
+    transition: 0.1s;
+  }
+
+  .making-of__play-button:focus .making-of__play-icon {
+    @include button;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 81px;
+    height: 62px;
+    opacity: 0.3;
+    transition: 0.1s;
+  }
+
+  .making-of__button:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  .making-of__button:focus {
+    color: #7c7c7c;
   }
 }

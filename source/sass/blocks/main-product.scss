@@ -1,19 +1,31 @@
 .main-product {
-  padding-top: 34px;
+  padding-top: 27px;
   position: relative;
-  padding-bottom: 162px;
+  padding-bottom: 121px;
+}
+
+.main-product::after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  left: 0;
+  bottom: -42px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: cover;
+  transform: rotate(180deg);
 }
 
 .main-product__title {
   @include noindent;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-family: $openSansBold;
   font-size: 25px;
   line-height: 1.2;
 }
 
 .main-product__title-section {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .main-product__mark {
@@ -21,10 +33,11 @@
   font-size: 17px;
   line-height: 1.18;
   color: #63d1bb;
+  text-transform: uppercase;
 }
 
 .main-product__info {
-  margin-bottom: 35px;
+  margin-bottom: 18px;
   font-size: 15px;
   line-height: 1.6;
   color: #444444;
@@ -39,10 +52,18 @@
   width: 100%;
 }
 
+.main-product__td--top {
+  width: 95px;
+}
+
 .main-product__td {
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
+}
+
+.main-product__td--tiffany {
+  font-size: 14px;
 }
 
 .main-product__img {
@@ -67,15 +88,23 @@
 .main-product__button {
   @include button;
   @include style-button;
+  width: 259px;
+  height: 52px;
   line-height: 1.18;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .main-product {
     display: flex;
     justify-content: space-between;
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding-top: 144px;
+    padding-bottom: 64px;
+  }
+
+  .main-product::after {
+    height: 15px;
+    bottom: 0;
   }
 
   .main-product__description {
@@ -94,50 +123,64 @@
   .main-product__title {
     font-size: 43px;
     line-height: 1.16;
+    margin-top: 44px;
+    margin-left: -3px;
   }
 
   .main-product__info-section {
     width: 292px;
-    padding-bottom: 11px;
+    padding-bottom: 8px;
   }
 
   .main-product__info {
     margin-top: 0;
+    font-size: 17px;
+    line-height: 1.76;
+    margin-bottom: 38px;
   }
 
   .main-product__mark {
     width: 120px;
+    margin-top: 47px;
+    margin-right: 30px;
     text-align: center;
     align-self: center;
+    line-height: 1;
   }
 
   .main-product__img {
     width: 334px;
     height: 404px;
+    margin-top: 7px;
   }
 
   .main-product__price-section {
     position: relative;
+    left: -2px;
   }
 
   .main-product__button {
     width: 292px;
+    height: 52px;
   }
 
-  .main-product::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 23px;
-    bottom: 0;
-    left: 0;
-    background-image: url("../img/bg-zigzag-line.svg");
+  .main-product__price {
+    margin-bottom: 34px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-product {
-    padding-top: 54px;
+    padding-top: 63px;
+    padding-bottom: 90px;
+  }
+
+  .main-product::after {
+    height: 21px;
+    width: 1050px;
+    left: auto;
   }
 
   .main-product__description {
@@ -148,30 +191,57 @@
   .main-product__mid-section {
     position: relative;
     left: 90px;
+    margin-top: 166px;
   }
 
   .main-product__title-section {
-    top: 100px;
+    top: 79px;
     left: 60px;
     flex-direction: row-reverse;
-    width: 620px;
+    width: 686px;
   }
 
   .main-product__title {
-    font-size: 50px;
+    font-size: 52.5px;
     line-height: 1.08;
   }
 
+  .main-product__mark {
+    margin-left: 12px;
+  }
+
   .main-product__info-section {
-    margin-bottom: 100px;
+    margin-bottom: 59px;
+    margin-left: 85px;
   }
 
   .main-product__info {
-    margin-bottom: 66px;
+    margin-bottom: 50px;
+  }
+
+  .main-product__params {
+    margin-bottom: 44px;
   }
 
   .main-product__img {
     width: 525px;
     height: 637px;
+  }
+
+  .main-product__price-section {
+    left: 85px;
+  }
+
+  .main-product__price {
+    width: 292px;
+  }
+
+  .main-product__button:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  .main-product__button:focus {
+    color: #7c7c7c;
   }
 }

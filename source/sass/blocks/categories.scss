@@ -20,13 +20,14 @@
   @include link;
   position: relative;
   display: block;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 29px;
   font-family: $openSansBold;
   font-size: 19px;
   line-height: 1.26;
   color: #ffffff;
+  width: 175px;
 }
 
 .categories__img {
@@ -37,16 +38,16 @@
   width: 40px;
   height: 62px;
   fill: #3bb09d;
-  top: 10px;
-  right: 30px;
+  top: 23px;
+  right: -80px;
 }
 
 .categories__img--toy {
-  width: 40px;
-  height: 62px;
+  width: 60px;
+  height: 60px;
   fill: #35a999;
-  top: 10px;
-  right: 30px;
+  top: 20px;
+  right: -89px;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,10 +58,56 @@
   .categories__item {
     min-height: 120px;
   }
+
+  .categories__link {
+    padding-top: 28px;
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .categories__img--interior {
+    top: 30px;
+    right: -87px;
+  }
+
+  .categories__img--toy {
+    top: 31px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .categories__list {
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    align-items: flex-end;
+    width: 1050px;
+  }
+
+  .categories__item--interior {
+    transition: 0.2s ease-out;
+  }
+
+  .categories__item--toy {
+    transition: 0.2s ease-out;
+  }
+
+  .categories__img--interior {
+    top: 30px;
+    right: -278px;
+  }
+
+  .categories__img--toy {
+    right: -279px;
+  }
+
+  .categories__item--interior:hover {
+    padding-top: 5px;
+    transition: 0.2s ease-out;
+  }
+
+  .categories__item--toy:hover {
+    padding-top: 5px;
+    transition: 0.2s;
   }
 }

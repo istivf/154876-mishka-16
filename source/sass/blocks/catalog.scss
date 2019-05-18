@@ -1,7 +1,19 @@
 .catalog {
-  padding-top: 30px;
+  padding-top: 29px;
 }
 
 .catalog__catalog-list {
   @include list;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 118px;
+  }
 }
