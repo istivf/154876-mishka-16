@@ -8,7 +8,7 @@
     <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/opensansbold.woff2" as="font">
   </head>
-  <body class="a">
+  <body>
 
     <div style="display:none" >
       <include src="build/img/sprite.svg"></include>
@@ -266,27 +266,29 @@
       </div>
     </footer>
 
-    <section class="modal container modal-hidden">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form action="#"  method="get">
-        <ul class="modal__size-list">
-          <li class="modal__size-item">
-            <input class="visually-hidden modal__size-input" type="checkbox" id="s" checked>
-            <label class="modal__label" for="s">S</label>
-          </li>
-          <li class="modal__size-item">
-            <input class="visually-hidden modal__size-input" type="checkbox" id="m">
-            <label class="modal__label" for="m">M</label>
-          </li>
-          <li class="modal__size-item">
-            <input class="visually-hidden modal__size-input" type="checkbox" id="l">
-            <label class="modal__label" for="l">L</label>
-          </li>
-        </ul>
-        <button class="modal__button" type="button">Добавить</button>
-      </form>
-    </section>
+    <div class="modal-layout modal-layout--hidden">
+      <section class="modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form action="#"  method="get">
+          <ul class="modal__size-list">
+            <li class="modal__size-item">
+              <input class="visually-hidden modal__size-input" type="checkbox" id="s" checked>
+              <label class="modal__label" for="s">S</label>
+            </li>
+            <li class="modal__size-item">
+              <input class="visually-hidden modal__size-input" type="checkbox" id="m">
+              <label class="modal__label" for="m">M</label>
+            </li>
+            <li class="modal__size-item">
+              <input class="visually-hidden modal__size-input" type="checkbox" id="l">
+              <label class="modal__label" for="l">L</label>
+            </li>
+          </ul>
+          <button class="modal__button" type="button">Добавить</button>
+        </form>
+      </section>
+    </div>
 
     <script src="js/menu-mobile.js"></script>
     <script src="js/modal.js"></script>

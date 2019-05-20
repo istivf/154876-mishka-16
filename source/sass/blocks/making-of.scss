@@ -163,8 +163,7 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 121px;
-    height: 92px;
+    transform: scale(1.2);
     transition: 0.1s;
   }
 
@@ -176,9 +175,8 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 81px;
-    height: 62px;
     opacity: 0.3;
+    transform: scale(0.8);
     transition: 0.1s;
   }
 
