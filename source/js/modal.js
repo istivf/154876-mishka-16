@@ -1,20 +1,11 @@
 var order = document.querySelector(".main-product__button");
-var modal = document.querySelector(".modal");
+var modal = document.querySelector(".modal-layout");
 var buy = document.querySelector(".modal__button");
-var page = document.querySelector(".main-product");
-var body = document.querySelector("body");
 
 order.addEventListener("click" , function () {
-  modal.classList.remove("modal-hidden");
-  body.classList.add("opacity");
+  modal.classList.remove("modal-layout--hidden");
 });
 
 buy.addEventListener("click" , function () {
-  modal.classList.add("modal-hidden");
-  body.classList.remove("opacity");
+  modal.classList.add("modal-layout--hidden");
 });
-//
-// body.addEventListener("click" , function () {
-//   modal.classList.add("modal-hidden");
-//   // page.classList.remove("opacity");
-// });
