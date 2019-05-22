@@ -212,10 +212,6 @@
     left: -5px;
   }
 
-  .catalog-list__price-section::before {
-    top: -18px;
-  }
-
   .catalog-list__button {
     margin-top: 0;
     margin-right: -4px;
@@ -236,6 +232,7 @@
   }
 
   .catalog-list__price-section::before {
+    top: -18px;
     width: 256px;
   }
 
