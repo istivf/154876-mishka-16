@@ -180,7 +180,7 @@
   .main-product::after {
     height: 21px;
     width: 1050px;
-    left: auto;
+    left: 50px;
   }
 
   .main-product__description {
@@ -190,8 +190,8 @@
 
   .main-product__mid-section {
     position: relative;
-    left: 90px;
     margin-top: 166px;
+    margin-left: 90px;
   }
 
   .main-product__title-section {
