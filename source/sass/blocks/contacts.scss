@@ -52,12 +52,11 @@
 }
 
 .contacts__map-wrapper {
-  margin: 0 auto;
   margin-bottom: 40px;
 }
 
 .contacts__map {
-  width: 320px;
+  width: 100%;
   height: 457px;
 }
 
@@ -137,6 +136,11 @@
 
   .contacts-email {
     padding-bottom: 3px;
+  }
+
+  .contacts__map-wrapper {
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   .contacts__map {

@@ -5,6 +5,9 @@
 }
 
 .categories__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -14,6 +17,10 @@
 
 .categories__item--toy {
   background-color: #56c3b2;
+}
+
+.categories__link-wrapper {
+  width: 320px;
 }
 
 .categories__link {
@@ -74,6 +81,10 @@
   .categories__img--toy {
     top: 31px;
   }
+
+  .categories__link-wrapper {
+    width: 334px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -109,5 +120,9 @@
   .categories__item--toy:hover {
     padding-top: 5px;
     transition: 0.2s;
+  }
+
+  .categories__link-wrapper {
+    width: 525px;
   }
 }

@@ -27,7 +27,7 @@
   padding-left: 75px;
 }
 
-.main-nav__link--desktop {
+.main-nav__item--desktop {
   display: none;
 }
 
@@ -92,6 +92,12 @@
     line-height: 1.41;
   }
 
+  .main-nav__link--desktop {
+    padding-left: 0;
+    padding-top: 12px;
+    font-size: 15px;
+  }
+
   .main-nav__item:first-child .main-nav__link {
     padding-left: 1px;
   }
@@ -100,7 +106,7 @@
     border-right: 1px solid #ececec;
   }
 
-  .main-nav__link--desktop {
+  .main-nav__item--desktop {
     @include link;
     display: block;
     padding-left: 0;
